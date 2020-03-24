@@ -1,8 +1,11 @@
 # Entrega 2
 **Análisis y Diseño:**
  **1. Definición de Equipo (integrantes, emails)**
-	 Laura Sanchez Cordoba - 
+ 
+	Laura Sanchez Cordoba - 
+	
 	Mateo Florez Restrepo - mflorezr@eafit.edu.co
+	
 	Santiago Arturo Zapata Chacón - sazapatac1@eafit.edu.co
  
  **2. Asignación de roles y responsabilidades de cada integrante del equipo en el desarrollo del proyecto2.**
@@ -24,6 +27,7 @@ Laura Sanchez Cordoba:
 	 [https://github.com/sazapatac1/maltet](https://github.com/sazapatac1/maltet)
 	 
 **4. Especificación de requisitos no funcionales.**
+
 **a. Disponibilidad**
 
 Para el módulo de High availability se tomó en cuenta la arquitectura diseñada, por lo tanto se creó una AMI (imagen) donde crea automáticamente un servidor LAMP con wordpress que apunta a la base de datos alojada en RDS.
