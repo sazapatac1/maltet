@@ -1,5 +1,6 @@
 # Entrega 2
 **Análisis y Diseño:**
+
  **1. Definición de Equipo (integrantes, emails)**
  
 	Laura Sanchez Cordoba - 
