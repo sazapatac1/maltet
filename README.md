@@ -78,15 +78,20 @@ Por último se activa la opción de "Always HTTPS" para redirigir todas las peti
 **b. Rendimiento**
 
 En cuestiones de robustez de una aplicación una de las partes más importantes es el rendimiento de nuestro producto o aplicación. El rendimiento de una aplicación puede ser medida desde diferentes aspectos de esta. Para nuestra aplicación entonces tomaremos en cuenta varias características que optimizaremos para lograr unas mejores cifras de rendimiento. Estas características serán:
+
 Velocidad: Los tiempos de respuesta a las peticiones de los usuarios deben tener un tiempo menor o igual a 1 segundo. Las peticiones y respuestas deben ser procesadas en el menor tiempo posible para hacer nuestro sitio más rápido ante los usuarios.
+
 Cache: La caché es una memoria intermedia que permite guardar datos para que las solicitudes o peticiones futuras puedan acceder a ellos más rápidamente sin tener que recurrir a los procesos ya hechos recientemente 
+
 Tamaño de Scripts: Comprimir o minificar al máximo los archivos y recursos de nuestra aplicación de manera que el tiempo de carga sea el menor posible.
 
 Teniendo en cuenta las características anteriores existe además un principio o herramienta que puede ayudarnos con la optimización del rendimiento, y es el CDN.
 El CDN (Content Delivery Network) es un conjunto de ubicaciones (servidores distribuidos geográficamente) en el mundo que distribuyen localmente el contenido de los servidores y guardan en cache los archivos que no necesitan actualización permanente.  Este principio permite entonces a un usuario a acceder al contenido y los servicios de la página desde cualquier lugar del mundo.
 La CDN permite acelerar las cargas de las paginas, mejorar los tiempos de respuesta y la experiencia del usuario, proteger datos, mejorar el posicionamiento de los sitios web y reducir el consumo de ancho de banda en cada uno de los países.  
 
+
 **![](https://assets.digitalocean.com/articles/CDN/CDN.png)**
+
 
 Existen muchas herramientas que nos ayudan a implementar el CDN en nuestra aplicación, sin embargo, escogimos “CloudFlare” ya que esta herramienta además del rendimiento nos ayuda a optimizar la seguridad y los otros atributos de calidad de la aplicación, y nos ofrece buenos servicios de manera gratuita. 
 Estas son las ventajas de CloudFlare para el rendimiento:
@@ -96,7 +101,9 @@ Estas son las ventajas de CloudFlare para el rendimiento:
 **![](http://imgfz.com/i/rWzuqvL.png)**
 **![](http://imgfz.com/i/8SOlWGM.png)**
 
+
 CDN en cloudflare: 
+
 La Red de entrega de contenido (CDN) de Cloudflare es un grupo de servidores distribuidos geográficamente que aseguran la entrega rápida de contenido de Internet, incluidas páginas HTML, archivos JavaScript, hojas de estilo e imágenes. El almacenamiento en caché de recursos estáticos en Cloudflare reduce la carga del servidor y el ancho de banda, sin cargos adicionales por picos de ancho de banda.
 Para comprender mas acerca del servicio de CDN de cloudflare: https://support.cloudflare.com/hc/es-es/articles/200172516-Comprender-la-CDN-de-Cloudflare
 
@@ -134,6 +141,7 @@ Según los parámetros de calificación de la herramienta de Google nuestra pagi
 **![](http://imgfz.com/i/4Ou2bKS.png)**
 **![](http://imgfz.com/i/4Ou2bKS.png)**
 
+
 Test con Cloudflare
 
 Después de aplicar los cambios y optimizaciones volvimos a analizar el sitio con la herramienta de Google, PageSpeed Insights y vimos como mejoro en casi todos los resultados:
@@ -150,12 +158,18 @@ Lo probamos desde Japon, en Asia:
 **![](http://imgfz.com/i/jr5VJ14.png)**
 
 La cual nos arrojó excelentes resultados.
+
+
 Y también hicimos pruebas en GTMetrix, otra herramienta muy útil que nos da dos valores, uno de velocidad de página y otro que emplea YSlow. Lo probamos desde Vancouver, Canadá:
+
 
 **![](http://imgfz.com/i/dyo6eT4.png)**
 **![](http://imgfz.com/i/7OvoVyH.png)**
 
+
 En esta última prueba nos califican el grado de cumplimiento de las buenas prácticas y optimizaciones principales de rendimiento de nuestra página, en la cual los resultados fueron muy buenos.
+
+
 De acuerdo con las tres pruebas en las diferentes herramientas de medida de rendimiento nuestra página arroja tiempos de carga y velocidad óptimos. Según las diferentes pruebas los tiempos de carga varían entre 0 y 1,4 segundos, y además el sistema cubre muchas de las buenas prácticas para alcanzar un óptimo rendimiento.
 
 **Test de concurrencia**
