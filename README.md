@@ -216,7 +216,33 @@ En este listener podemos ver la información por cada petición de usuario. Es d
 Nota: el dominio que figura en las pruebas es diferente, ya que era el dominio de prueba para el apartado de seguridad
 
 En el módulo de seguridad se trabajaron varios niveles de protección, empezando con que una vez el usuario se registra, para loguearse debe pasar una autenticación 2Factor a través de Google Authenticator.
+**![](http://imgfz.com/i/zXm7H21.png)**
 
+**![](http://imgfz.com/i/r4oajN3.png)**
+
+Para Protección de algunas amenazas/vulnerabilidades que puedan llegar a la página, como SQL Injections, el uso de exploits, fuerza bruta, etc. Se hace uso de dos plugins.
+
+En primer lugar se hace uso de Anti-Malware, el cual identifica amenazas como las anteriormente mencionadas, habilita el Firewall, escanea para eliminar amenazas detectadas y además, permite bloquear el acceso al archivo XMLRPC.PHP que es el que configura el protocolo XMLRCP en Wordpress el cual actúa como interfaz con servicios externos. El bloqueo de este impide ataques como hallar la contraseña del sitio a través de fuerza bruta y DDOS.  
+
+**![](http://imgfz.com/i/TnSobui.png)**
+
+Otro plugin usado es Wordfence, que además de arreglar vulnerabilidades posee un modo de aprendizaje desde el momento de la instalación donde revisa el sitio (las IP que acceden, las características) para prevenir ataques. Además su herramienta de escaneo identifica las amenazas, de donde vienen y las modificaciones a los ficheros, permitiendo volver a la configuración inicial, permite hacer copias de seguridad y las ubica en la sección de cuarentena para posterior análisis. 
+
+**![](http://imgfz.com/i/NXgAzni.png)**
+
+Monitoreo de tráfico
+
+**![](http://imgfz.com/i/EiLRWFq.png)**
+
+Nota: Algunas vulnerabilidades no pudieron ser cubiertas dado que para hacerlo se necesitan versiones Premium de los plugins.
+
+Autenticación con Redes Sociales
+
+También se agregó la posibilidad de que el usuario se identifique a través de las opciones de Facebook y Google para facilidad de este. Esto se realizó a través del plugin
+**![](http://imgfz.com/i/YX8Kr2V.png)**
+
+Análisis de vulnerabilidades según el sitio WebSec
+**![](http://imgfz.com/i/ptsYhSw.png)**
 
 **5. Diseño para la Escalabilidad (disponibilidad, rendimiento y seguridad)**
 
