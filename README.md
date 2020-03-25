@@ -85,7 +85,7 @@ Teniendo en cuenta las características anteriores existe además un principio o
 El CDN (Content Delivery Network) es un conjunto de ubicaciones (servidores distribuidos geográficamente) en el mundo que distribuyen localmente el contenido de los servidores y guardan en cache los archivos que no necesitan actualización permanente.  Este principio permite entonces a un usuario a acceder al contenido y los servicios de la página desde cualquier lugar del mundo.
 La CDN permite acelerar las cargas de las paginas, mejorar los tiempos de respuesta y la experiencia del usuario, proteger datos, mejorar el posicionamiento de los sitios web y reducir el consumo de ancho de banda en cada uno de los países.  
 
-**![](http://imgfz.com/i/dh0CXiR.jpeg)**
+**![](https://assets.digitalocean.com/articles/CDN/CDN.png)**
 
 **c. Seguridad**
 Nota: el dominio que figura en las pruebas es diferente, ya que era el dominio de prueba para el apartado de seguridad
