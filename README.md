@@ -90,7 +90,7 @@ La CDN permite acelerar las cargas de las paginas, mejorar los tiempos de respue
 
 Existen muchas herramientas que nos ayudan a implementar el CDN en nuestra aplicación, sin embargo, escogimos “CloudFlare” ya que esta herramienta además del rendimiento nos ayuda a optimizar la seguridad y los otros atributos de calidad de la aplicación, y nos ofrece buenos servicios de manera gratuita. 
 Estas son las ventajas de CloudFlare para el rendimiento:
-**![](http://imgfz.com/i/JwGQT56.png)**
+**![](http://imgfz.com/i/mviwRX7.png)**
 **![](http://imgfz.com/i/rWzuqvL.png)**
 **![](http://imgfz.com/i/8SOlWGM.png)**
 
