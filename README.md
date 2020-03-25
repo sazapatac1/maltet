@@ -3,7 +3,7 @@
 
  **1. Definición de Equipo (integrantes, emails)**
  
-	Laura Sanchez Cordoba - 
+	Laura Sanchez Cordoba - lsanchezc@eafit.edu.co
 	
 	Mateo Florez Restrepo - mflorezr@eafit.edu.co
 	
@@ -23,6 +23,12 @@ Santiago Arturo Zapata Chacón:
 Mateo Florez Restrepo:
 
 Laura Sanchez Cordoba:
+ - Protección de datos
+ - Autenticación de dos factores y con terceros (Facebook y Google)
+ - Manejo de vulnerabilidades descritas por la OWASP
+ - Análisis dinámico de la aplicaciòn (Test de vulnerabilidad) 
+ - Seguridad (protección de ataques y fortalecimiento de autenticación)
+
 
  **3. Github del proyecto:**
 	 [https://github.com/sazapatac1/maltet](https://github.com/sazapatac1/maltet)
@@ -47,7 +53,8 @@ En el auto-Scaling se tiene un limite de 2 a 20 instancias, debido a las pruebas
 
 **![](https://lh5.googleusercontent.com/OiHZys3FKCgWYm5XotqP3kukoe_GClAJ7Xlqp8ZqhpdwDkn5UANHfqu2kpHY2-o3s6oyKgIZ72uhzlLKJWBkGjigLM8e0sJ7PE_Pjuq5uI-D23dKjdA_I9S1406szDh6UVaLGIQq)**
 
-Luego, en los detalles de auto-scaling, se coloca el grupo de destino del load balancer para que todas las instancias creadas vayan directamente a el.
+Luego, en los detalles de auto-scaling, se coloca el grupo de destino del load balancer para que todas las instancias creadas vayan directamente a él.
+
 
 **![](https://lh3.googleusercontent.com/jSpVSe4a3zKqsS9EhbZsZ0MoHOwHSdbzRfGv34mKCIxp9RSmL0IchW03Pz5b8qCTsuWsXH88kq4BmFwk0DqoV1rkAVFOBneDcKEpZt_2lKeUzq2T0bRP3GxMi7tIqdSG2JwIpzSi)**
 
@@ -62,3 +69,8 @@ Se coloca en DNS del dominio un record CNAME apuntando al DNS Name del balancead
 Por último se activa la opción de "Always HTTPS" para redirigir todas las peticiones http a https.
 
 **![](https://lh6.googleusercontent.com/XM5p-pTW9MNfZfRREHijJhn4I7GgHOqjOcwec1JE8W642ZAffwpTiJ5lAypYGaQePOn2rdhjsZvlN6i8AP2xLaqTPN5WJYt2Kwvtaz-kYyC-WSfiJ2KFrWkHuSeSX4HqC3PXO90i)**
+
+**c. Seguridad**
+Nota: el dominio que figura en las pruebas es diferente, ya que era el dominio de prueba para el apartado de seguridad
+
+En el módulo de seguridad se trabajaron varios niveles de protección, empezando con que una vez el usuario se registra, para loguearse debe pasar una autenticación 2Factor a través de Google Authenticator.
