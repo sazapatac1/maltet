@@ -75,6 +75,12 @@ Por último se activa la opción de "Always HTTPS" para redirigir todas las peti
 
 **![](https://lh6.googleusercontent.com/XM5p-pTW9MNfZfRREHijJhn4I7GgHOqjOcwec1JE8W642ZAffwpTiJ5lAypYGaQePOn2rdhjsZvlN6i8AP2xLaqTPN5WJYt2Kwvtaz-kYyC-WSfiJ2KFrWkHuSeSX4HqC3PXO90i)**
 
+Luego, en RDS se tiene dos instancias de base de datos MySQL las cuales son 'Master' y 'Replica' facilitando el escalado de manera elastica para así aumentar la capacidad y el volumen de tráfico de lectura, aumentando su rendimiento, desempeño y durabilidad. También, se colocó la base de datos Multi-AZ la cual proporciona alta disponibilidad y failover para las intancias, aprovisionando y manteniendo automáticamente una réplica en espera sincrónica en una zona de disponibilidad diferente
+
+**![](https://lh5.googleusercontent.com/x1Rn0D2_8KsfP7SNNsqRvLdHITuneCbzxyYB8yni5RyLa7NgWVyVKvaI2NuKXyuFPScWy2jHBEa1mdWLguSrePKiPQgcAOEcyyAuxzlFYG3SBk51gUk01V94c9jYVPxYO6Dg9qGi)**
+
+**![](https://lh6.googleusercontent.com/IQIbuiYmWW_iye6bJ6t72js_MdUkOfYImj0mp5irMU4AD3n2fJSqRWC3N1AWhWEY8RfB1UMNrn5CFlXBu1hy8vkuqqsMKg4jAufN4luH4Fg0YL3B6X5Ey-FXqkxRcUj0taPGGJ9c)****![](https://lh6.googleusercontent.com/EWLs8ys4JTP1_Lnw6iUfunqAEV6aDap1uRtKoS5_XYd39dfdQ_3DbSo09QZSeOVDQElP0kvtNZSzwKQ7HIJaUUklRjxYkMzl95LNYNxI7vUAVRyt16ilrvokTixU8FvvHKerVmY2)**
+
 **b. Rendimiento**
 
 En cuestiones de robustez de una aplicación una de las partes más importantes es el rendimiento de nuestro producto o aplicación. El rendimiento de una aplicación puede ser medida desde diferentes aspectos de esta. Para nuestra aplicación entonces tomaremos en cuenta varias características que optimizaremos para lograr unas mejores cifras de rendimiento. Estas características serán:
