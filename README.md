@@ -234,13 +234,19 @@ En el módulo de seguridad se trabajaron varios niveles de protección, empezand
 	
 	b. Definición de Herramientas a utilizar.
 	
-	- Docker: Docker  es una herramienta PaaS (plataform as a service) que usa la virtualización a nivel de Sistema Operativo para alojar el software en contenedores, con todo lo que necesita para funcionar. Cada contenedor es independiente de los demás	
-	-Balanceador de carga: Herramienta de Software (en este caso) que permite distribuir las peticiones entre servidores a través de algoritmos para mejorar el funcionamiento de los servidores ante un tráfico muy alto.
-	-Auto Scaling Groups: herramienta de AWS que a partir de unas políticas y definición de un rango de instancias EC2 a usar, bajo demanda creará las instancias que sean necesarias dadas las peticiones que se hagan.
-	-Cloudfare: Herramienta que actúa como proxy entre el servidor y los clientes, reduce el número de peticiones al servidor gracias a que como proxy, guarda temporalmente contenido estático del sitio.
-	-Amazon Relational Database Service (Amazon RDS) : servicio que suministra una base de datos relacional escalable y se encarga de su aprovisionamiento, copias de seguridad, etc. para que el usuario se encargue de cómo se complementa su aplicación con la base de datos.
-	-EC2: es un servicio web que proporciona capacidad informática en la nube segura y de tamaño modificable.
-	-JMeter: es un proyecto de Apache que se utiliza como herramienta de prueba de carga para medir el rendimiento de una aplicación web.
+		- Docker: Docker  es una herramienta PaaS (plataform as a service) que usa la virtualización a nivel de Sistema Operativo para alojar el software en contenedores, con todo lo que necesita para funcionar. Cada contenedor es independiente de los demás	
+		
+		- Balanceador de carga: Herramienta de Software (en este caso) que permite distribuir las peticiones entre servidores a través de algoritmos para mejorar el funcionamiento de los servidores ante un tráfico muy alto.
+		
+		- Auto Scaling Groups: herramienta de AWS que a partir de unas políticas y definición de un rango de instancias EC2 a usar, bajo demanda creará las instancias que sean necesarias dadas las peticiones que se hagan.
+	 	
+		- Cloudfare: Herramienta que actúa como proxy entre el servidor y los clientes, reduce el número de peticiones al servidor gracias a que como proxy, guarda temporalmente contenido estático del sitio.
+		
+		- Amazon Relational Database Service (Amazon RDS) : servicio que suministra una base de datos relacional escalable y se encarga de su aprovisionamiento, copias de seguridad, etc. para que el usuario se encargue de cómo se complementa su aplicación con la base de datos.
+		
+		- EC2: es un servicio web que proporciona capacidad informática en la nube segura y de tamaño modificable.
+		
+		- JMeter: es un proyecto de Apache que se utiliza como herramienta de prueba de carga para medir el rendimiento de una aplicación web.
 
 
 		
