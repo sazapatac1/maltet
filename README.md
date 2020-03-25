@@ -21,6 +21,11 @@ Santiago Arturo Zapata Chacón:
  - Asignar dominio al Load Balancer
  
 Mateo Florez Restrepo:
+ - Test de velocidad
+ - Test de concurrencia(jmeter)
+ - CDN(Cloudflare)
+ - Caché
+ - Rendimiento(análisis y diseño)
 
 Laura Sanchez Cordoba:
  - Protección de datos
@@ -69,6 +74,18 @@ Se coloca en DNS del dominio un record CNAME apuntando al DNS Name del balancead
 Por último se activa la opción de "Always HTTPS" para redirigir todas las peticiones http a https.
 
 **![](https://lh6.googleusercontent.com/XM5p-pTW9MNfZfRREHijJhn4I7GgHOqjOcwec1JE8W642ZAffwpTiJ5lAypYGaQePOn2rdhjsZvlN6i8AP2xLaqTPN5WJYt2Kwvtaz-kYyC-WSfiJ2KFrWkHuSeSX4HqC3PXO90i)**
+
+**b. Rendimiento**
+En cuestiones de robustez de una aplicación una de las partes más importantes es el rendimiento de nuestro producto o aplicación. El rendimiento de una aplicación puede ser medida desde diferentes aspectos de esta. Para nuestra aplicación entonces tomaremos en cuenta varias características que optimizaremos para lograr unas mejores cifras de rendimiento. Estas características serán:
+Velocidad: Los tiempos de respuesta a las peticiones de los usuarios deben tener un tiempo menor o igual a 1 segundo. Las peticiones y respuestas deben ser procesadas en el menor tiempo posible para hacer nuestro sitio más rápido ante los usuarios.
+Cache: La caché es una memoria intermedia que permite guardar datos para que las solicitudes o peticiones futuras puedan acceder a ellos más rápidamente sin tener que recurrir a los procesos ya hechos recientemente 
+Tamaño de Scripts: Comprimir o minificar al máximo los archivos y recursos de nuestra aplicación de manera que el tiempo de carga sea el menor posible.
+
+Teniendo en cuenta las características anteriores existe además un principio o herramienta que puede ayudarnos con la optimización del rendimiento, y es el CDN.
+El CDN (Content Delivery Network) es un conjunto de ubicaciones (servidores distribuidos geográficamente) en el mundo que distribuyen localmente el contenido de los servidores y guardan en cache los archivos que no necesitan actualización permanente.  Este principio permite entonces a un usuario a acceder al contenido y los servicios de la página desde cualquier lugar del mundo.
+La CDN permite acelerar las cargas de las paginas, mejorar los tiempos de respuesta y la experiencia del usuario, proteger datos, mejorar el posicionamiento de los sitios web y reducir el consumo de ancho de banda en cada uno de los países.  
+
+**![](http://imgfz.com/i/CWoR7me.png)**
 
 **c. Seguridad**
 Nota: el dominio que figura en las pruebas es diferente, ya que era el dominio de prueba para el apartado de seguridad
