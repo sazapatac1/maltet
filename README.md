@@ -216,3 +216,10 @@ En este listener podemos ver la información por cada petición de usuario. Es d
 Nota: el dominio que figura en las pruebas es diferente, ya que era el dominio de prueba para el apartado de seguridad
 
 En el módulo de seguridad se trabajaron varios niveles de protección, empezando con que una vez el usuario se registra, para loguearse debe pasar una autenticación 2Factor a través de Google Authenticator.
+
+
+**5. Diseño para la Escalabilidad (disponibilidad, rendimiento y seguridad)	
+	a. Qué patrones de arquitectura específicos (patrones de escalabilidad y buenas prácticas) se utilizarán en el SISTEMA para 	apoyar esta escalabilidad:
+		i.Mejores prácticas
+		ii.Selección de tácticas 
+		iii.Decisiones de diseño**
