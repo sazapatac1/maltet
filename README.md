@@ -222,6 +222,27 @@ En el módulo de seguridad se trabajaron varios niveles de protección, empezand
 
 	a. Qué patrones de arquitectura específicos (patrones de escalabilidad y buenas prácticas) se utilizarán en el SISTEMA para 	apoyar esta escalabilidad:
 	
-		-i.Mejores prácticas
-		-ii.Selección de tácticas 
-		-iii.Decisiones de diseño
+		i.Mejores prácticas
+		ii.Selección de tácticas 
+		iii.Decisiones de diseño
+	
+	Uno de los patrones de escalabilidad usados fue Workload/demand distribution ya que con el uso de balanceadores de carga las peticiones son equilibradas, permitiendo un mejor trabajo de las instancias. 
+	Se hace un backup de la base de datos, en el caso de algún problema. 
+	En cuanto a performance, el uso de cloudfare nos da ventajas como la minimización de archivos JavaScript y CCS y el manejo de caché.
+	El uso Autoscaling Group y sus políticas permiten que a medida que entren los usuarios se vayan creando instancias cada que sea necesario.
+	Para la seguridad se llevaron a cabo tácticas como la doble autenticación y la autenticación con terceros, además de la protección del sitio frente a vulnerabilidades como inyección de código, robo de datos y ataques DoS.  
+	
+	b. Definición de Herramientas a utilizar.
+	
+	- Docker: Docker  es una herramienta PaaS (plataform as a service) que usa la virtualización a nivel de Sistema Operativo para alojar el software en contenedores, con todo lo que necesita para funcionar. Cada contenedor es independiente de los demás	
+	-Balanceador de carga: Herramienta de Software (en este caso) que permite distribuir las peticiones entre servidores a través de algoritmos para mejorar el funcionamiento de los servidores ante un tráfico muy alto.
+	-Auto Scaling Groups: herramienta de AWS que a partir de unas políticas y definición de un rango de instancias EC2 a usar, bajo demanda creará las instancias que sean necesarias dadas las peticiones que se hagan.
+	-Cloudfare: Herramienta que actúa como proxy entre el servidor y los clientes, reduce el número de peticiones al servidor gracias a que como proxy, guarda temporalmente contenido estático del sitio.
+	-Amazon Relational Database Service (Amazon RDS) : servicio que suministra una base de datos relacional escalable y se encarga de su aprovisionamiento, copias de seguridad, etc. para que el usuario se encargue de cómo se complementa su aplicación con la base de datos.
+	-EC2: es un servicio web que proporciona capacidad informática en la nube segura y de tamaño modificable.
+	-JMeter: es un proyecto de Apache que se utiliza como herramienta de prueba de carga para medir el rendimiento de una aplicación web.
+
+
+		
+		
+		
