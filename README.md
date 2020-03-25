@@ -132,17 +132,16 @@ Además, te permite manejar y personalizar la cache de tu sistema, de acuerdo co
 Usamos entonces una herramienta para calcular los tiempos de respuesta de la página. 
 PageSpeed Insights es la herramienta oficial de Google para valorar el grado de optimización de nuestra página web. El reporte de optimización muestra en que está fallando nuestra página y además nos da sugerencias para solucionarlo. 
 
-Test antes de cloudflare:
+**Test antes de cloudflare:**
 
 **![](http://imgfz.com/i/DdVmk5C.png)**
 
 Según los parámetros de calificación de la herramienta de Google nuestra pagina tiene una muy buena optimización, por lo menos para usuarios desktop, sin embargo, nos ofrece algunas sugerencias que podríamos implementar en nuestra página. 
 
 **![](http://imgfz.com/i/4Ou2bKS.png)**
-**![](http://imgfz.com/i/4Ou2bKS.png)**
 
 
-Test con Cloudflare
+**Test con Cloudflare**
 
 Después de aplicar los cambios y optimizaciones volvimos a analizar el sitio con la herramienta de Google, PageSpeed Insights y vimos como mejoro en casi todos los resultados:
 
